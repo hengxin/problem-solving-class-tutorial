@@ -1,0 +1,144 @@
+%for hyper link
+%\usepackage[colorlinks, linkcolor=blue]{hyperref}
+
+\usepackage[utf8]{inputenc}
+
+
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+
+
+
+%for graphs and pics
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{matrix,shapes,arrows,positioning,fit,backgrounds,calc}
+\usepackage{overpic}
+%for animation
+\usepackage[dvipdfmx]{animate}
+
+
+%boxes
+\usepackage[normalem]{ulem}
+\usepackage[most]{tcolorbox}
+\usepackage{fancybox}
+
+\usepackage{bbding}
+\usepackage{pifont}
+
+%for tables
+\usepackage{booktabs}
+%for algorithms
+\makeatletter
+\newif\if@restonecol
+\makeatother
+\let\algorithm\relax
+\let\endalgorithm\relax
+\usepackage[linesnumbered,ruled,noend,noline]{algorithm2e}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}  % Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the 
+\SetAlCapNameFnt{\scriptsize}
+\SetAlCapFnt{\scriptsize}
+
+% for Chinese
+\usepackage{CJK}
+\usepackage{zhnumber}
+
+
+
+%for codes
+\usepackage{listings}
+\lstset{%
+	alsolanguage=Java,
+	%language={[ISO]C++}, %language为，还有{[Visual]C++}
+	%alsolanguage=[ANSI]C, %可以添加很多个alsolanguage,如alsolanguage=matlab,alsolanguage=VHDL等
+	%alsolanguage= tcl,
+	alsolanguage= XML,
+	tabsize=4, %
+	frame=shadowbox, %把代码用带有阴影的框圈起来
+	commentstyle=\color{red!50!green!50!blue!50},%浅灰色的注释
+	rulesepcolor=\color{red!20!green!20!blue!20},%代码块边框为淡青色
+	keywordstyle=\color{blue!90}\bfseries, %代码关键字的颜色为蓝色，粗体
+	showstringspaces=false,%不显示代码字符串中间的空格标记
+	stringstyle=\ttfamily, % 代码字符串的特殊格式
+	keepspaces=true, %
+	breakindent=22pt, %
+	numbers=left,%左侧显示行号 往左靠,还可以为right，或none，即不加行号
+	stepnumber=1,%若设置为2，则显示行号为1,3,5，即stepnumber为公差,默认stepnumber=1
+	%numberstyle=\tiny, %行号字体用小号
+	numberstyle={\color[RGB]{0,192,192}\tiny} ,%设置行号的大小，大小有tiny,scriptsize,footnotesize,small,normalsize,large等
+	numbersep=8pt, %设置行号与代码的距离，默认是5pt
+	basicstyle=\footnotesize, % 这句设置代码的大小
+	showspaces=false, %
+	flexiblecolumns=true, %
+	breaklines=true, %对过长的代码自动换行
+	breakautoindent=true,%
+	breakindent=4em, %
+	escapebegin=\begin{CJK*}{GBK}{hei},escapeend=\end{CJK*},
+	aboveskip=1em, %代码块边框
+	tabsize=2,
+	showstringspaces=false, %不显示字符串中的空格
+	backgroundcolor=\color[RGB]{245,245,244}, %代码背景色
+	%backgroundcolor=\color[rgb]{0.91,0.91,0.91} %添加背景色
+	escapeinside=``, %在``里显示中文
+	%% added by http://bbs.ctex.org/viewthread.php?tid=53451
+	fontadjust,
+	captionpos=t,
+	framextopmargin=2pt,framexbottommargin=2pt,abovecaptionskip=-3pt,belowcaptionskip=3pt,
+	xleftmargin=4em,xrightmargin=4em, % 设定listing左右的空白
+	texcl=true,
+	% 设定中文冲突，断行，列模式，数学环境输入，listing数字的样式
+	extendedchars=false,columns=flexible,mathescape=true
+	% numbersep=-1em
+}
+
+\lstdefinestyle{styleJ}{
+	language=[AspectJ]Java,
+	keywordstyle=\color{keywordcolor}\bfseries, 
+	commentstyle=\color{blue} \textit, 
+	showstringspaces=false,
+	numbers=left,
+	numberstyle=\small
+}
+\lstdefinestyle{styleP}{
+	language=Python,
+	numbers=right, 
+	frame=single,
+	numberstyle=\small ,
+}
+\usetikzlibrary{decorations.pathreplacing}
+\usetheme{Eastlansing}
+\newcommand{\fallingfactorial}[1]{%
+	^{\underline{#1}}%
+}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+\newcommand{\question}[2]{
+	{\color{blue!60!black!90!}\large\textbf{Q #1}: #2}
+}
+
+%for colors
+
+\usepackage{color,xcolor}
+% predefined colors
+\newcommand{\red}[1]{\textcolor{red}{#1}} % usage: \red{text}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\teal}[1]{\textcolor{teal}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\definecolor{keywordcolor}{rgb}{0.1,0.1,0.8}
+\definecolor{webgreen}{rgb}{0,.5,0}
+\definecolor{bgcolor}{rgb}{0.92,0.92,0.92}
+
+%for arrows
+\usepackage{extarrows}
+
+%for math function font
+\usefonttheme[onlymath]{serif}

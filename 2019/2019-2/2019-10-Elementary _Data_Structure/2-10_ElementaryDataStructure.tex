@@ -1,0 +1,53 @@
+\documentclass[UTF8,11pt,handout]{beamer}
+
+\input{mj_preamble_lecturenote}
+\mode<presentation>
+\begin{document}
+	\author{MA Jun}
+	\title{Problem Solving}
+	\subtitle{2-10 Elementary Data Structure}
+	\logo{\includegraphics[width=0.05\textwidth]{figs/ICS_LOGO_left.png}}
+	\institute{Institute of Computer Software}
+	%\date{March 31, 2020}
+	%\subject{}
+	%\setbeamercovered{transparent}
+	%\setbeamertemplate{navigation symbols}{}
+\begin{frame}[plain]
+	\maketitle
+\end{frame}
+\begin{frame}           %生成目录页，目录太长时加选项[shrink]
+	\addtocounter{framenumber}{-2}%---------位置放在beginframe之后，不然无效
+	\frametitle{Contents}
+	\thispagestyle{empty}
+	\tableofcontents[hideallsubsections]
+\end{frame}
+\AtBeginSection[]{
+	\begin{frame}           %生成目录页，目录太长时加选项[shrink]
+		\addtocounter{framenumber}{-1}%---------位置放在beginframe之后，不然无效
+		\frametitle{Contents}
+		\thispagestyle{empty}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+\begin{frame}
+	\begin{block}{
+		\begin{center}
+		{\huge
+			Thank You!
+			
+			\textcolor[rgb]{1,0,0}	{Questions?}
+		}
+		\end{center}
+	}
+	\end{block}
+	\begin{block}{}
+		\begin{center}
+		
+			Office 819
+			
+			majun@nju.edu.cn
+		\end{center}
+	\end{block}
+	\end{frame}
+\end{document}
